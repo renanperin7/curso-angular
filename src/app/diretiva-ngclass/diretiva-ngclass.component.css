@@ -1,0 +1,9 @@
+.btn-padrao {
+  background-color: blue;
+  color: white;
+}
+
+.btn-diferente {
+  background-color: white;
+  color: blue;
+}

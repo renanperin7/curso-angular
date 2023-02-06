@@ -1,0 +1,35 @@
+<h3>Diretiva NgStyle</h3>
+
+<h4>Property binding</h4>
+
+<button
+  [style.backgroundColor]="ativo ? 'blue' : 'gray'"
+  [style.color]="ativo ? 'white' : 'black'"
+  [style.fontWeight]="ativo ? 'bold' : 'normal'"
+  [style.fontSize]="tamanhoFonte + 'px'"
+
+  (click)="mudarAtivo()"
+>
+  Mudar atributo 'ativo'
+</button>
+<br>
+<input type="text" [(ngModel)]="tamanhoFonte">
+
+<br>
+<br>
+
+<h4>Usando a diretiva de fato</h4>
+
+<button
+[ngStyle]="{
+  'backgroundColor': (ativo2 ? 'blue' : 'gray'),
+  'color': (ativo2 ? 'white' : 'black'),
+  'fontWeight': (ativo2 ? 'bold' : 'normal'),
+  'fontSize': (tamanhoFonte + 'px')
+}"
+
+  (click)="mudarAtivo2()"
+>
+  Mudar atributo 'ativo'
+</button>
+

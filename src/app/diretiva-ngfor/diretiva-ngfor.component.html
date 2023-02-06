@@ -1,0 +1,16 @@
+<h3>Diretiva ngFor</h3>
+
+<div>
+  <h4>Nomes</h4>
+  <ul *ngFor="let item of list">
+    <li>Nome: {{ item }}</li>
+  </ul>
+</div>
+
+<div>
+  <h4>Cadastros</h4>
+  <ul *ngFor="let cadastro of cadastros">
+    <li>Nome: {{ cadastro.nome }}</li>
+    <li>Idade: {{ cadastro.idade }}</li>
+  </ul>
+</div>

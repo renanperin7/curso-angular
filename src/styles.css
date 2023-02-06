@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+  height: 8000px;
+  margin: 12px;
+}
+
+h3 {
+  margin-top: 45px;
+  padding-bottom: 6px ;
+  border-bottom: 2px solid black;
+}

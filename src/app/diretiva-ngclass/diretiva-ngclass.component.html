@@ -1,0 +1,8 @@
+<h3>Diretiva NgClass</h3>
+
+<div>
+  <button [ngClass]="{
+    'btn-padrao': !meuFavorito,
+    'btn-diferente': meuFavorito
+  }" (click)="onClick()">Clique Aqui</button>
+</div>
